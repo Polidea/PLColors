@@ -1,6 +1,6 @@
 # PLColors
 
-[![CI Status](http://img.shields.io/travis/Michał Laskowski/PLColors.svg?style=flat)](https://travis-ci.org/Michał Laskowski/PLColors)
+[![CI Status](http://img.shields.io/travis/Polidea/PLColors.svg?style=flat)](https://travis-ci.org/Polidea/PLColors)
 [![Version](https://img.shields.io/cocoapods/v/PLColors.svg?style=flat)](http://cocoadocs.org/docsets/PLColors)
 [![License](https://img.shields.io/cocoapods/l/PLColors.svg?style=flat)](http://cocoadocs.org/docsets/PLColors)
 [![Platform](https://img.shields.io/cocoapods/p/PLColors.svg?style=flat)](http://cocoadocs.org/docsets/PLColors)

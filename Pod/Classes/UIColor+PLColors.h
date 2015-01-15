@@ -2,7 +2,7 @@
 
 @interface UIColor (PLColors)
 
-+ (UIColor *) colorWithHexString:(NSString *)hexString;
-+ (UIColor *) colorWithHEXStringWithAlpha:(NSString *)hexString;
++ (UIColor *)colorWithHexString:(NSString *)hexString;
++ (UIColor *)colorWithHexStringWithAlpha:(NSString *)hexString;
 
 @end

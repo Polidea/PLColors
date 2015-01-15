@@ -7,7 +7,7 @@
     return nil;
 }
 
-+ (UIColor *)colorWithHEXStringWithAlpha:(NSString *)hexString {
++ (UIColor *)colorWithHexStringWithAlpha:(NSString *)hexString {
     return nil;
 }
 

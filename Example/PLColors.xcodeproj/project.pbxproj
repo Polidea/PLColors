@@ -22,6 +22,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		6316784B8FD82B7A1F56C063 /* PLTestsHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 631671115D2E5C46C00DA4E8 /* PLTestsHelpers.m */; };
 		B4E15474969084D307C7203A /* libPods-PLColors.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FB2B2C54C003EB0A59307CF /* libPods-PLColors.a */; };
 		F2EA48357D85130F5D78CF25 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35806902660C22855029DAE5 /* libPods-Tests.a */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,8 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		631671115D2E5C46C00DA4E8 /* PLTestsHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLTestsHelpers.m; sourceTree = "<group>"; };
+		63167E60D8117B054547E97F /* PLTestsHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTestsHelpers.h; sourceTree = "<group>"; };
 		68A0EE20BFDD4B21808D3C9E /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6FB2B2C54C003EB0A59307CF /* libPods-PLColors.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PLColors.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		728CE8856CF0E125A1D8D870 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +174,8 @@
 			children = (
 				6003F5BB195388D20070C39A /* Tests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
+				631671115D2E5C46C00DA4E8 /* PLTestsHelpers.m */,
+				63167E60D8117B054547E97F /* PLTestsHelpers.h */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -364,6 +369,7 @@
 				6003F59E195388D20070C39A /* PLAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* PLViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				6316784B8FD82B7A1F56C063 /* PLTestsHelpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
