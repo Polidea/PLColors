@@ -108,7 +108,6 @@ describe(@"PLColors tests", ^{
         });
     });
 
-
     context(@"for Hex string with alpha", ^{
         it(@"correct UIColor for string without # ('22441155')", ^{
             UIColor *correctColor = colorForIntegersComponents(34, 68, 17, 85);
@@ -208,6 +207,186 @@ describe(@"PLColors tests", ^{
         it(@"nil for too long string", ^{
             UIColor *calculateColor = [UIColor colorWithHexStringWithAlpha:@"1124ba34e"];
             [[calculateColor should] beNil];
+        });
+    });
+
+    context(@"for standard colors", ^{
+        context(@"without alpha component", ^{
+            it(@"black color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexString:@"#000000"];
+                UIColor *correctColor = [UIColor blackColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
+
+            it(@"dark gray color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexString:@"#555555"];
+                UIColor *correctColor = [UIColor darkGrayColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
+
+            it(@"light gray color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexString:@"#AAAAAA"];
+                UIColor *correctColor = [UIColor lightGrayColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
+
+            it(@"white color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexString:@"#FFFFFF"];
+                UIColor *correctColor = [UIColor whiteColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
+
+            it(@"gray color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexString:@"#7F7F7F"];
+                UIColor *correctColor = [UIColor grayColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
+
+            it(@"red color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexString:@"#FF0000"];
+                UIColor *correctColor = [UIColor redColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
+
+            it(@"green color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexString:@"#00FF00"];
+                UIColor *correctColor = [UIColor greenColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
+
+            it(@"blue color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexString:@"#0000FF"];
+                UIColor *correctColor = [UIColor blueColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
+
+            it(@"cyan color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexString:@"#00FFFF"];
+                UIColor *correctColor = [UIColor cyanColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
+
+            it(@"yellow color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexString:@"#FFFF00"];
+                UIColor *correctColor = [UIColor yellowColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
+
+            it(@"magenta color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexString:@"#FF00FF"];
+                UIColor *correctColor = [UIColor magentaColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
+
+            it(@"orange color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexString:@"#FF7F00"];
+                UIColor *correctColor = [UIColor orangeColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
+
+            it(@"purple color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexString:@"#7F007F"];
+                UIColor *correctColor = [UIColor purpleColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
+
+            it(@"brown color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexString:@"#996633"];
+                UIColor *correctColor = [UIColor brownColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
+        });
+
+        context(@"with alpha component", ^{
+            it(@"black color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexStringWithAlpha:@"#000000FF"];
+                UIColor *correctColor = [UIColor blackColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
+
+            it(@"dark gray color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexStringWithAlpha:@"#555555FF"];
+                UIColor *correctColor = [UIColor darkGrayColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
+
+            it(@"light gray color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexStringWithAlpha:@"#AAAAAAFF"];
+                UIColor *correctColor = [UIColor lightGrayColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
+
+            it(@"white color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexStringWithAlpha:@"#FFFFFFFF"];
+                UIColor *correctColor = [UIColor whiteColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
+
+            it(@"gray color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexStringWithAlpha:@"#7F7F7FFF"];
+                UIColor *correctColor = [UIColor grayColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
+
+            it(@"red color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexStringWithAlpha:@"#FF0000FF"];
+                UIColor *correctColor = [UIColor redColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
+
+            it(@"green color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexStringWithAlpha:@"#00FF00FF"];
+                UIColor *correctColor = [UIColor greenColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
+
+            it(@"blue color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexStringWithAlpha:@"#0000FFFF"];
+                UIColor *correctColor = [UIColor blueColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
+
+            it(@"cyan color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexStringWithAlpha:@"#00FFFFFF"];
+                UIColor *correctColor = [UIColor cyanColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
+
+            it(@"yellow color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexStringWithAlpha:@"#FFFF00FF"];
+                UIColor *correctColor = [UIColor yellowColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
+
+            it(@"magenta color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexStringWithAlpha:@"#FF00FFFF"];
+                UIColor *correctColor = [UIColor magentaColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
+
+            it(@"orange color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexStringWithAlpha:@"#FF7F00FF"];
+                UIColor *correctColor = [UIColor orangeColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
+
+            it(@"purple color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexStringWithAlpha:@"#7F007FFF"];
+                UIColor *correctColor = [UIColor purpleColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
+
+            it(@"brown color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexStringWithAlpha:@"#996633FF"];
+                UIColor *correctColor = [UIColor brownColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
+
+            it(@"clear color", ^{
+                UIColor *calculateColor = [UIColor colorWithHexStringWithAlpha:@"#00000000"];
+                UIColor *correctColor = [UIColor clearColor];
+                [[theValue(testColorEquality(correctColor, calculateColor)) should] equal:theValue(YES)];
+            });
         });
     });
 

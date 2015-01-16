@@ -1,13 +1,9 @@
 #import "PLTestsHelpers.h"
 
 CGFloat normalizedFloatColorValue(NSInteger value) {
-    CGFloat res = (CGFloat)value / 255.0f;
-    if (res < 0.0f) {
-        res = 0.0f;
-    }
-    else if (res > 1.0f) {
-        res = 1.0f;
-    }
+    CGFloat res = MAX((CGFloat)value / 255.0f, 0.0f);
+    res = MIN(res, 1.0f);
+
     return res;
 };
 

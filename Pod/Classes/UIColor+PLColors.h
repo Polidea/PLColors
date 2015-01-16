@@ -8,6 +8,7 @@
 *   @param hexString string describing color in format RRGGBB or RGB, where R,G,B are hexadecimal digits describing
 *   color component values. Optionally it can have # symbol at the beginning.
 *
+*   @return Created UIColor or nil if hexString is in unsupported format.
 */
 + (UIColor *)colorWithHexString:(NSString *)hexString;
 
@@ -17,6 +18,7 @@
 *   @param hexString string describing color in format RRGGBBAA or RGBA, where R,G,B,A are hexadecimal digits describing
 *   color component values. Optionally it can have # symbol at the beginning.
 *
+*   @return Created UIColor or nil if hexString is in unsupported format.
 */
 + (UIColor *)colorWithHexStringWithAlpha:(NSString *)hexString;
 
