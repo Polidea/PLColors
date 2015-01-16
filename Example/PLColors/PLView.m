@@ -7,6 +7,7 @@
     UIView *_blueSquare;
     UIView *_greenSquare;
     UIView *_transparentSquare;
+    UIView *_secondTransparentSquare;
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -21,7 +22,7 @@
 
         _blueSquare = [UIView new];
         _blueSquare.translatesAutoresizingMaskIntoConstraints = NO;
-        _blueSquare.backgroundColor = [UIColor colorWithHexString:@"#0000FF"];
+        _blueSquare.backgroundColor = [UIColor colorWithHexInteger:0x0000FF];
         [self addSubview:_blueSquare];
 
         _greenSquare = [UIView new];
@@ -31,8 +32,13 @@
 
         _transparentSquare = [UIView new];
         _transparentSquare.translatesAutoresizingMaskIntoConstraints = NO;
-        _transparentSquare.backgroundColor = [UIColor colorWithHexStringWithAlpha:@"#00000088"];
+        _transparentSquare.backgroundColor = [UIColor colorWithHexStringWithAlpha:@"#0000007F"];
         [self addSubview:_transparentSquare];
+
+        _secondTransparentSquare = [UIView new];
+        _secondTransparentSquare.translatesAutoresizingMaskIntoConstraints = NO;
+        _secondTransparentSquare.backgroundColor = [UIColor colorWithHexIntegerWithAlpha:0x0000FF7F];
+        [self addSubview:_secondTransparentSquare];
 
         [self createConstraints];
     }
@@ -170,6 +176,39 @@
                                                         toItem:_transparentSquare
                                                      attribute:NSLayoutAttributeWidth
                                                     multiplier:1.0
+                                                      constant:0]];
+
+    // Second transparent square
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:_secondTransparentSquare
+                                                     attribute:NSLayoutAttributeCenterX
+                                                     relatedBy:NSLayoutRelationEqual
+                                                        toItem:_transparentSquare
+                                                     attribute:NSLayoutAttributeCenterX
+                                                    multiplier:1.0
+                                                      constant:0]];
+
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:_secondTransparentSquare
+                                                     attribute:NSLayoutAttributeTop
+                                                     relatedBy:NSLayoutRelationEqual
+                                                        toItem:_transparentSquare
+                                                     attribute:NSLayoutAttributeBottom
+                                                    multiplier:1.0
+                                                      constant:-50]];
+
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:_secondTransparentSquare
+                                                     attribute:NSLayoutAttributeHeight
+                                                     relatedBy:NSLayoutRelationEqual
+                                                        toItem:_transparentSquare
+                                                     attribute:NSLayoutAttributeHeight
+                                                    multiplier:1.0
+                                                      constant:0]];
+
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:_secondTransparentSquare
+                                                     attribute:NSLayoutAttributeWidth
+                                                     relatedBy:NSLayoutRelationEqual
+                                                        toItem:_secondTransparentSquare
+                                                     attribute:NSLayoutAttributeHeight
+                                                    multiplier:0.5
                                                       constant:0]];
 }
 
