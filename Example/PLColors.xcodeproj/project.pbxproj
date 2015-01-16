@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C1F3FF41A696D0100240CBF /* PLTestsHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 631671115D2E5C46C00DA4E8 /* PLTestsHelpers.m */; };
+		4C1F3FF51A696D0100240CBF /* PLColorsHexIntegerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 631671CBF1294739A2A2BE11 /* PLColorsHexIntegerTests.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -19,7 +21,8 @@
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		6003F5BC195388D20070C39A /* PLColorsHexStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* PLColorsHexStringTests.m */; };
+		631671B27DD1195BFD0FAF1C /* PLColorsHexIntegerTests.m in Resources */ = {isa = PBXBuildFile; fileRef = 631671CBF1294739A2A2BE11 /* PLColorsHexIntegerTests.m */; };
 		6316760F9F4EA9C86A777456 /* PLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63167EAC012E8229F4C52F9E /* PLView.m */; };
 		6316784B8FD82B7A1F56C063 /* PLTestsHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 631671115D2E5C46C00DA4E8 /* PLTestsHelpers.m */; };
 		B4E15474969084D307C7203A /* libPods-PLColors.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FB2B2C54C003EB0A59307CF /* libPods-PLColors.a */; };
@@ -58,9 +61,10 @@
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		6003F5BB195388D20070C39A /* PLColorsHexStringTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLColorsHexStringTests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		631671115D2E5C46C00DA4E8 /* PLTestsHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLTestsHelpers.m; sourceTree = "<group>"; };
+		631671CBF1294739A2A2BE11 /* PLColorsHexIntegerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLColorsHexIntegerTests.m; sourceTree = "<group>"; };
 		63167758DD8D59593BDD2C91 /* PLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLView.h; sourceTree = "<group>"; };
 		63167E60D8117B054547E97F /* PLTestsHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTestsHelpers.h; sourceTree = "<group>"; };
 		63167EAC012E8229F4C52F9E /* PLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLView.m; sourceTree = "<group>"; };
@@ -171,10 +175,11 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				6003F5BB195388D20070C39A /* Tests.m */,
+				6003F5BB195388D20070C39A /* PLColorsHexStringTests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 				631671115D2E5C46C00DA4E8 /* PLTestsHelpers.m */,
 				63167E60D8117B054547E97F /* PLTestsHelpers.h */,
+				631671CBF1294739A2A2BE11 /* PLColorsHexIntegerTests.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -290,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
+				631671B27DD1195BFD0FAF1C /* PLColorsHexIntegerTests.m in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +381,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				4C1F3FF41A696D0100240CBF /* PLTestsHelpers.m in Sources */,
+				4C1F3FF51A696D0100240CBF /* PLColorsHexIntegerTests.m in Sources */,
+				6003F5BC195388D20070C39A /* PLColorsHexStringTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

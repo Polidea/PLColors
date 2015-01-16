@@ -60,6 +60,15 @@
     return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
 }
 
++ (UIColor *)colorWithHexInteger:(NSUInteger)value {
+    return nil;
+}
+
++ (UIColor *)colorWithHexIntegerWithAlpha:(NSUInteger)value {
+    return nil;
+}
+
+
 + (CGFloat)normalizedFloatColorComponentFromHexString:(NSString *)hexString {
     NSScanner *scanner = [NSScanner scannerWithString:[NSString stringWithFormat:@"0x%@", hexString]];
     float floatValue;

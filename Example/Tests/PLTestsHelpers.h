@@ -1,4 +1,5 @@
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 CGFloat normalizedFloatColorValue(NSInteger value);
 BOOL testColorEquality(UIColor *firstColor, UIColor *secondColor);

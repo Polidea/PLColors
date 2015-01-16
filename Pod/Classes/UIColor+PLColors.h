@@ -22,4 +22,8 @@
 */
 + (UIColor *)colorWithHexStringWithAlpha:(NSString *)hexString;
 
++ (UIColor *)colorWithHexInteger:(NSUInteger)value;
+
++ (UIColor *)colorWithHexIntegerWithAlpha:(NSUInteger)value;
+
 @end
