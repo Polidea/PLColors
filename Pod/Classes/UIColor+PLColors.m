@@ -61,23 +61,46 @@
 }
 
 + (UIColor *)colorWithHexInteger:(NSUInteger)value {
-    return nil;
+    if (value > 0xFFFFFF) {
+        return nil;
+    }
+
+    CGFloat blue = [UIColor normalizedFloatColorComponentFromInteger:(value & 0xFF)];
+    value >>= 8;
+    CGFloat green = [UIColor normalizedFloatColorComponentFromInteger:(value & 0xFF)];
+    value >>= 8;
+    CGFloat red = [UIColor normalizedFloatColorComponentFromInteger:(value & 0xFF)];
+
+    return [UIColor colorWithRed:red green:green blue:blue alpha:1.0f];
 }
 
 + (UIColor *)colorWithHexIntegerWithAlpha:(NSUInteger)value {
-    return nil;
+    NSUInteger alphaIntComponent = value & 0xFF;
+    CGFloat alphaFloatValue = [UIColor normalizedFloatColorComponentFromInteger:alphaIntComponent];
+    if (alphaFloatValue < 0.f) {
+        return nil;
+    }
+
+    return [[UIColor colorWithHexInteger:(value >> 8)] colorWithAlphaComponent:alphaFloatValue];
 }
 
-
-+ (CGFloat)normalizedFloatColorComponentFromHexString:(NSString *)hexString {
-    NSScanner *scanner = [NSScanner scannerWithString:[NSString stringWithFormat:@"0x%@", hexString]];
-    float floatValue;
-    BOOL result = [scanner scanHexFloat:&floatValue];
-    if (!result || floatValue > 255.0f) {
++ (CGFloat)normalizedFloatColorComponentFromInteger:(NSUInteger)value {
+    if (value > 255) {
         return -1.0f;
     }
 
-    return floatValue / 255.0f;
+    return value / 255.0f;
+}
+
++ (CGFloat)normalizedFloatColorComponentFromHexString:(NSString *)hexString {
+    NSScanner *scanner = [NSScanner scannerWithString:[NSString stringWithFormat:@"0x%@", hexString]];
+    unsigned int intValue;
+    BOOL result = [scanner scanHexInt:&intValue];
+    if (!result) {
+        return -1.0f;
+    }
+
+    return [UIColor normalizedFloatColorComponentFromInteger:intValue];
 }
 
 
