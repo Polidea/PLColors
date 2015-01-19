@@ -5,11 +5,30 @@
 [![License](https://img.shields.io/cocoapods/l/PLColors.svg?style=flat)](http://cocoadocs.org/docsets/PLColors)
 [![Platform](https://img.shields.io/cocoapods/p/PLColors.svg?style=flat)](http://cocoadocs.org/docsets/PLColors)
 
+PLColors is a small library that allows you to create UIColor objects based on hexadecimal color representation,
+similar to that used in HTML and CSS languages. UIKit allows you to create UIColor objects only with floating point 
+numbers which is inconvenient when you get these values from graphics programs.
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+### Methods
+
+PLColors provides four methods to create UIColor objects:
+
+```objc
++ (UIColor *)colorWithHexString:(NSString *)hexString;
++ (UIColor *)colorWithHexStringWithAlpha:(NSString *)hexString;
++ (UIColor *)colorWithHexInteger:(NSUInteger)value;
++ (UIColor *)colorWithHexIntegerWithAlpha:(NSUInteger)value;
+```
+
+See the code to check in which format should be parameters.
+
 ## Requirements
+
+- iOS6
 
 ## Installation
 

@@ -1,30 +1,17 @@
-#
-# Be sure to run `pod lib lint PLColors.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
-#
-# Any lines starting with a # are optional, but encouraged
-#
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = "PLColors"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of PLColors."
+  s.version          = "1.0.0"
+  s.summary          = "Creating UIColor objects based on hexadecimal color representation."
   s.description      = <<-DESC
-                       An optional longer description of PLColors
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       PLColors is an UIColor category that provides methods that allows you to create UIColor objects
+                       based on hexadecimal color representation, similar to that used in HTML or CSS language.
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/PLColors"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/Polidea/PLColors"
   s.license          = 'MIT'
   s.author           = { "Michał Laskowski" => "michal.laskowski@polidea.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/PLColors.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/Polidea/PLColors.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '6.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes'
@@ -32,7 +19,5 @@ Pod::Spec.new do |s|
     'PLColors' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit'
 end
