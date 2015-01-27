@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "PLColors"
-  s.version          = "1.0.0"
+  s.version          = "0.1.0"
   s.summary          = "Creating UIColor objects based on the hexadecimal representation of the colors."
   s.description      = <<-DESC
                        PLColors is an UIColor category that provides methods that allows you to create UIColor objects
