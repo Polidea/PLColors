@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "PLColors"
-  s.version          = "0.1.0"
+  s.version          = "0.2.0"
   s.summary          = "Creating UIColor objects based on the hexadecimal representation of the colors."
   s.description      = <<-DESC
                        PLColors is an UIColor category that provides methods that allows you to create UIColor objects
@@ -11,13 +11,17 @@ Pod::Spec.new do |s|
   s.author           = { "Michał Laskowski" => "michal.laskowski@polidea.com" }
   s.source           = { :git => "https://github.com/Polidea/PLColors.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '6.0'
+  s.ios.deployment_target = "6.0"
+  s.osx.deployment_target = "10.8"
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes'
   s.resource_bundles = {
     'PLColors' => ['Pod/Assets/*.png']
   }
+  s.ios.exclude_files = "Pod/Classes/NSColor+PLColors.h"
+  s.osx.exclude_files = "Pod/Classes/UIColor+PLColors.h"
 
-  s.frameworks = 'UIKit'
+  s.ios.frameworks = "UIKit"
+  s.osx.framework = "AppKit"
 end

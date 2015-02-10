@@ -4,7 +4,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIColor+PLColors.h"
+#import "PLColors.h"
 #import "PLTestsHelpers.h"
 
 SPEC_BEGIN(PLColorsHexString)

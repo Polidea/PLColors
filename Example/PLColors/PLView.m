@@ -4,7 +4,7 @@
 //
 
 #import "PLView.h"
-#import "UIColor+PLColors.h"
+#import "PLColors.h"
 
 
 @implementation PLView {

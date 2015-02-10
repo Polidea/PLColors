@@ -1,6 +1,6 @@
 PODS:
   - Kiwi (2.3.1)
-  - PLColors (0.1.0)
+  - PLColors (0.2.0)
 
 DEPENDENCIES:
   - Kiwi
@@ -12,6 +12,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Kiwi: 73e1400209055ee9c8ba78c6012b6b642d0fb9f7
-  PLColors: 3fda5a875647995e9879d592fc0022e6733e5bd6
+  PLColors: 12e5a58f63106cb17ab8482ab136607d3e6bf7f5
 
 COCOAPODS: 0.35.0

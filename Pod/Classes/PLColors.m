@@ -3,12 +3,12 @@
 //  Copyright (c) 2015 Polidea Sp. z o.o.
 //
 
-#import "UIColor+PLColors.h"
+#import "PLColors.h"
 
 
-@implementation UIColor (PLColors)
+@implementation PLColor (PLColors)
 
-+ (UIColor *)colorWithHexString:(NSString *)hexString {
++ (PLColor *)colorWithHexString:(NSString *)hexString {
     if (hexString.length == 3 || (hexString.length == 4 && [hexString characterAtIndex:0] == '#')) {
         hexString = [hexString stringByAppendingString:@"F"];
     }
@@ -16,10 +16,10 @@
         hexString = [hexString stringByAppendingString:@"FF"];
     }
 
-    return [UIColor colorWithHexStringWithAlpha:hexString];
+    return [PLColor colorWithHexStringWithAlpha:hexString];
 }
 
-+ (UIColor *)colorWithHexStringWithAlpha:(NSString *)hexString {
++ (PLColor *)colorWithHexStringWithAlpha:(NSString *)hexString {
     if (hexString.length > 0 && [hexString characterAtIndex:0] == '#') {
         hexString = [hexString substringFromIndex:1];
     }
@@ -53,40 +53,40 @@
         return nil;
     }
 
-    CGFloat red = [UIColor normalizedFloatColorComponentFromHexString:[hexString substringWithRange:[result rangeAtIndex:1]]];
-    CGFloat green = [UIColor normalizedFloatColorComponentFromHexString:[hexString substringWithRange:[result rangeAtIndex:2]]];
-    CGFloat blue = [UIColor normalizedFloatColorComponentFromHexString:[hexString substringWithRange:[result rangeAtIndex:3]]];
-    CGFloat alpha = [UIColor normalizedFloatColorComponentFromHexString:[hexString substringWithRange:[result rangeAtIndex:4]]];
+    CGFloat red = [PLColor normalizedFloatColorComponentFromHexString:[hexString substringWithRange:[result rangeAtIndex:1]]];
+    CGFloat green = [PLColor normalizedFloatColorComponentFromHexString:[hexString substringWithRange:[result rangeAtIndex:2]]];
+    CGFloat blue = [PLColor normalizedFloatColorComponentFromHexString:[hexString substringWithRange:[result rangeAtIndex:3]]];
+    CGFloat alpha = [PLColor normalizedFloatColorComponentFromHexString:[hexString substringWithRange:[result rangeAtIndex:4]]];
 
     if (red < 0.f || green < 0.f || blue < 0.f || alpha < 0.f) {
         return nil;
     }
 
-    return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
+    return [PLColor colorWithRed:red green:green blue:blue alpha:alpha];
 }
 
-+ (UIColor *)colorWithHexInteger:(NSUInteger)value {
++ (PLColor *)colorWithHexInteger:(NSUInteger)value {
     if (value > 0xFFFFFF) {
         return nil;
     }
 
-    CGFloat blue = [UIColor normalizedFloatColorComponentFromInteger:(value & 0xFF)];
+    CGFloat blue = [PLColor normalizedFloatColorComponentFromInteger:(value & 0xFF)];
     value >>= 8;
-    CGFloat green = [UIColor normalizedFloatColorComponentFromInteger:(value & 0xFF)];
+    CGFloat green = [PLColor normalizedFloatColorComponentFromInteger:(value & 0xFF)];
     value >>= 8;
-    CGFloat red = [UIColor normalizedFloatColorComponentFromInteger:(value & 0xFF)];
+    CGFloat red = [PLColor normalizedFloatColorComponentFromInteger:(value & 0xFF)];
 
-    return [UIColor colorWithRed:red green:green blue:blue alpha:1.0f];
+    return [PLColor colorWithRed:red green:green blue:blue alpha:1.0f];
 }
 
-+ (UIColor *)colorWithHexIntegerWithAlpha:(NSUInteger)value {
++ (PLColor *)colorWithHexIntegerWithAlpha:(NSUInteger)value {
     NSUInteger alphaIntComponent = value & 0xFF;
-    CGFloat alphaFloatValue = [UIColor normalizedFloatColorComponentFromInteger:alphaIntComponent];
+    CGFloat alphaFloatValue = [PLColor normalizedFloatColorComponentFromInteger:alphaIntComponent];
     if (alphaFloatValue < 0.f) {
         return nil;
     }
 
-    return [[UIColor colorWithHexInteger:(value >> 8)] colorWithAlphaComponent:alphaFloatValue];
+    return [[PLColor colorWithHexInteger:(value >> 8)] colorWithAlphaComponent:alphaFloatValue];
 }
 
 + (CGFloat)normalizedFloatColorComponentFromInteger:(NSUInteger)value {
@@ -105,7 +105,7 @@
         return -1.0f;
     }
 
-    return [UIColor normalizedFloatColorComponentFromInteger:intValue];
+    return [PLColor normalizedFloatColorComponentFromInteger:intValue];
 }
 
 
