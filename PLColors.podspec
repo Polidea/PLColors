@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name             = "PLColors"
   s.version          = "0.2.0"
-  s.summary          = "Creating UIColor objects based on the hexadecimal representation of the colors."
+  s.summary          = "Creating UIColor / NSColor objects based on the hexadecimal representation of the colors."
   s.description      = <<-DESC
-                       PLColors is an UIColor category that provides methods that allows you to create UIColor objects
+                       PLColors is an UIColor and NSColor category that provides methods that allows you to create UIColor or NSColor objects
                        based on the hexadecimal representation of the colors, similar to that used in HTML or CSS language.
                        DESC
   s.homepage         = "https://github.com/Polidea/PLColors"
