@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C369DED1A8B5FD300C7FC9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C369DEC1A8B5FD300C7FC9C /* AppDelegate.m */; };
+		4C369DEF1A8B5FD300C7FC9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C369DEE1A8B5FD300C7FC9C /* main.m */; };
+		4C369DF11A8B5FD300C7FC9C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C369DF01A8B5FD300C7FC9C /* Images.xcassets */; };
+		4C369DF41A8B5FD300C7FC9C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C369DF21A8B5FD300C7FC9C /* MainMenu.xib */; };
+		90ECB60BF75D1AD27D57EA68 /* libPods-OSX PLColors Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 114406683E75FAE471E1A188 /* libPods-OSX PLColors Example.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		114406683E75FAE471E1A188 /* libPods-OSX PLColors Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OSX PLColors Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F8FFE14AE136148B8F37E1D /* Pods-OSX PLColors Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSX PLColors Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OSX PLColors Example/Pods-OSX PLColors Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4C369DE61A8B5FD300C7FC9C /* OSX PLColors Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OSX PLColors Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C369DEA1A8B5FD300C7FC9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C369DEB1A8B5FD300C7FC9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4C369DEC1A8B5FD300C7FC9C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4C369DEE1A8B5FD300C7FC9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C369DF01A8B5FD300C7FC9C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4C369DF31A8B5FD300C7FC9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4C369DFE1A8B5FD300C7FC9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C369DFF1A8B5FD300C7FC9C /* OSX_PLColors_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSX_PLColors_ExampleTests.m; sourceTree = "<group>"; };
+		FC4AAEE0E13C12BC4E110BD5 /* Pods-OSX PLColors Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSX PLColors Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-OSX PLColors Example/Pods-OSX PLColors Example.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C369DE31A8B5FD300C7FC9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90ECB60BF75D1AD27D57EA68 /* libPods-OSX PLColors Example.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F052FCD3047F397F3675D3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F8FFE14AE136148B8F37E1D /* Pods-OSX PLColors Example.debug.xcconfig */,
+				FC4AAEE0E13C12BC4E110BD5 /* Pods-OSX PLColors Example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4C369DDD1A8B5FD300C7FC9C = {
+			isa = PBXGroup;
+			children = (
+				4C369DE81A8B5FD300C7FC9C /* OSX PLColors Example */,
+				4C369DFC1A8B5FD300C7FC9C /* OSX PLColors ExampleTests */,
+				4C369DE71A8B5FD300C7FC9C /* Products */,
+				1F052FCD3047F397F3675D3B /* Pods */,
+				D3A2EB6905BFE9958A6DCA10 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4C369DE71A8B5FD300C7FC9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C369DE61A8B5FD300C7FC9C /* OSX PLColors Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C369DE81A8B5FD300C7FC9C /* OSX PLColors Example */ = {
+			isa = PBXGroup;
+			children = (
+				4C369DEB1A8B5FD300C7FC9C /* AppDelegate.h */,
+				4C369DEC1A8B5FD300C7FC9C /* AppDelegate.m */,
+				4C369DF01A8B5FD300C7FC9C /* Images.xcassets */,
+				4C369DF21A8B5FD300C7FC9C /* MainMenu.xib */,
+				4C369DE91A8B5FD300C7FC9C /* Supporting Files */,
+			);
+			path = "OSX PLColors Example";
+			sourceTree = "<group>";
+		};
+		4C369DE91A8B5FD300C7FC9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C369DEA1A8B5FD300C7FC9C /* Info.plist */,
+				4C369DEE1A8B5FD300C7FC9C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C369DFC1A8B5FD300C7FC9C /* OSX PLColors ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C369DFF1A8B5FD300C7FC9C /* OSX_PLColors_ExampleTests.m */,
+				4C369DFD1A8B5FD300C7FC9C /* Supporting Files */,
+			);
+			path = "OSX PLColors ExampleTests";
+			sourceTree = "<group>";
+		};
+		4C369DFD1A8B5FD300C7FC9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C369DFE1A8B5FD300C7FC9C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3A2EB6905BFE9958A6DCA10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				114406683E75FAE471E1A188 /* libPods-OSX PLColors Example.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C369DE51A8B5FD300C7FC9C /* OSX PLColors Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C369E031A8B5FD300C7FC9C /* Build configuration list for PBXNativeTarget "OSX PLColors Example" */;
+			buildPhases = (
+				E9DA64588B8D7DD0AF672594 /* Check Pods Manifest.lock */,
+				4C369DE21A8B5FD300C7FC9C /* Sources */,
+				4C369DE31A8B5FD300C7FC9C /* Frameworks */,
+				4C369DE41A8B5FD300C7FC9C /* Resources */,
+				28A70CCE2F3BD62A199CCC9A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OSX PLColors Example";
+			productName = "OSX PLColors Example";
+			productReference = 4C369DE61A8B5FD300C7FC9C /* OSX PLColors Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C369DDE1A8B5FD300C7FC9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Polidea Sp. z o.o.";
+				TargetAttributes = {
+					4C369DE51A8B5FD300C7FC9C = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 4C369DE11A8B5FD300C7FC9C /* Build configuration list for PBXProject "OSX PLColors Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C369DDD1A8B5FD300C7FC9C;
+			productRefGroup = 4C369DE71A8B5FD300C7FC9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C369DE51A8B5FD300C7FC9C /* OSX PLColors Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C369DE41A8B5FD300C7FC9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C369DF11A8B5FD300C7FC9C /* Images.xcassets in Resources */,
+				4C369DF41A8B5FD300C7FC9C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28A70CCE2F3BD62A199CCC9A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OSX PLColors Example/Pods-OSX PLColors Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9DA64588B8D7DD0AF672594 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C369DE21A8B5FD300C7FC9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C369DEF1A8B5FD300C7FC9C /* main.m in Sources */,
+				4C369DED1A8B5FD300C7FC9C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4C369DF21A8B5FD300C7FC9C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C369DF31A8B5FD300C7FC9C /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C369E011A8B5FD300C7FC9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4C369E021A8B5FD300C7FC9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4C369E041A8B5FD300C7FC9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F8FFE14AE136148B8F37E1D /* Pods-OSX PLColors Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "OSX PLColors Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4C369E051A8B5FD300C7FC9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC4AAEE0E13C12BC4E110BD5 /* Pods-OSX PLColors Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "OSX PLColors Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C369DE11A8B5FD300C7FC9C /* Build configuration list for PBXProject "OSX PLColors Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C369E011A8B5FD300C7FC9C /* Debug */,
+				4C369E021A8B5FD300C7FC9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C369E031A8B5FD300C7FC9C /* Build configuration list for PBXNativeTarget "OSX PLColors Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C369E041A8B5FD300C7FC9C /* Debug */,
+				4C369E051A8B5FD300C7FC9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C369DDE1A8B5FD300C7FC9C /* Project object */;
+}

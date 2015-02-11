@@ -1,0 +1,17 @@
+PODS:
+  - Kiwi (2.3.1)
+  - PLColors (0.2.0)
+
+DEPENDENCIES:
+  - Kiwi
+  - PLColors (from `../`)
+
+EXTERNAL SOURCES:
+  PLColors:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Kiwi: 73e1400209055ee9c8ba78c6012b6b642d0fb9f7
+  PLColors: fc971780775f8dd3f3c3885fdb77b8ea30074a58
+
+COCOAPODS: 0.35.0

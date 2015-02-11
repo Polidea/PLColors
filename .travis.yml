@@ -1,9 +1,12 @@
 language: objective-c
 
-xcode_workspace: Example/PLColors.xcworkspace
+xcode_workspace: "iOS PLColors Example/iOS PLColors Example.xcworkspace"
 
 xcode_scheme:
   - "PLColors Tests"
 
 xcode_sdk:
   - iphonesimulator
+
+notifications:
+  email: false
