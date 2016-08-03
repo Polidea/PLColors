@@ -1,3 +1,9 @@
+---
+
+This library is deprecated in favor of [PLXColors](https://github.com/Polidea/PLXColors)
+
+---
+
 # PLColors
 
 [![CI Status](http://img.shields.io/travis/Polidea/PLColors.svg?style=flat)](https://travis-ci.org/Polidea/PLColors)
